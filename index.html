@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>不明網站</title>
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0 40px;
+
+      background: #fafafa;
+      color: #333;
+      font: 18px/1.8 思源黑體, "Source Han Sans", "Noto Sans CJK TC", 蘋方-繁, "PingFang TC", 微軟正黑體, "Microsoft JhengHei", sans-serif;
+    }
+
+    blockquote {
+      position: relative; /* for ::before */
+    }
+
+    blockquote::before, blockquote::after {
+      position: absolute;
+      font-size: 48px;
+      line-height: 1;
+      color: #999;
+    }
+
+    blockquote::before {
+      content: '❝';
+      right: 100%;
+      margin-right: 6px;
+      top: -12px;
+    }
+
+    blockquote::after {
+      content: '❞';
+      left: 100%;
+      margin-left: 6px;
+      bottom: -12px;
+    }
+
+    .button {
+      color: #333;
+      padding: 12px 24px;
+      font-size: 24px;
+      border: 2px solid #333;
+      border-radius: 4px;
+      text-decoration: none;
+
+      transition: all .2s;
+    }
+    .button:hover {
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <blockquote cite="https://www.cna.com.tw/news/afe/201904280036.aspx">
+    不要在不明網站上報稅或下載報稅軟體。認明財政部電子申報繳稅服務網：<a href="https://tax.nat.gov.tw">https://tax.nat.gov.tw</a>，結尾是英文 gov.tw，不是混雜數字的 g0v.tw。
+    <footer>— <a href="https://www.cna.com.tw/news/afe/201904280036.aspx">2019-04-28 中央社</a></footer>
+  </blockquote>
+
+  <a class="button" href="https://tax.nat.gov.tw">現在就去正版的 tax.nat.gov.tw</a>
+</body>
+</html>
